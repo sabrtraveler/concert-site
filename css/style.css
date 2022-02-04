@@ -1,3 +1,5 @@
+/* Universal Styling */
+
 @font-face {
   font-family: "coco ultralight";
   src: url("./fonts/Coco-Gothic-Ultralight-trial.ttf");
@@ -37,21 +39,9 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-}
+/* Universal styling end */
 
-.social {
-  display: none;
-}
-
-.social a :hover {
-  color: #ec5242;
-}
-
-.social span:hover {
-  color: #ec5242;
-}
+/* Nav section */
 
 .nav {
   display: flex;
@@ -70,16 +60,19 @@
   line-height: 42px;
   text-transform: uppercase;
   text-shadow: 0 2px white, 0 3px #777;
+  margin-right: 1500px;
 }
 
 .listNav {
   text-align: right;
+  margin-right: 300px;
+  margin-bottom: 5px;
   font-family: "Times New Roman", Times, serif;
 }
 
-.listNav h1 {
-  margin-right: 1500px;
-}
+/* Nav section end */
+
+/* list element section */
 
 .listElement {
   display: inline-block;
@@ -107,10 +100,7 @@
   color: #ec5242;
 }
 
-.partnerFooter a {
-  text-decoration: none;
-  color: white;
-}
+/* list element end */
 
 .features a {
   text-decoration: none;
@@ -138,6 +128,7 @@
   font-size: 16px;
 }
 
+/* Flip box container start */
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   margin: auto;
@@ -172,7 +163,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  margin-top: 60px;
+  margin-top: 2px;
 }
 
 .flip-box-inner h2 {
@@ -196,18 +187,9 @@
   color: white;
   transform: rotateY(180deg);
 }
+/* Flip box container end */
 
 /* Price list */
-* {
-  box-sizing: border-box;
-}
-
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-  background-image: url(../img/SmallSpeaker1-03.png);
-}
 
 .price {
   list-style-type: none;
@@ -359,11 +341,6 @@
   min-width: 70px;
 }
 
-.speakers img {
-  max-height: 220px;
-  max-width: 130px;
-}
-
 .btnJoinCC {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -415,9 +392,16 @@
   color: #ec5242;
 }
 
+/* Celebrity speakers section */
+
 .speakers {
   display: flex;
   margin-bottom: 10px;
+}
+
+.speakers img {
+  max-height: 220px;
+  max-width: 130px;
 }
 
 .imgSpeakers {
@@ -462,11 +446,15 @@
   color: #ec5242;
 }
 
+/* Celebrity speakers end */
+
+/* Price/Footer start */
+
 .footerBanner {
   background-color: rgb(243, 209, 181);
 }
 
-.partnerFooter {
+.priceFooter {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -478,11 +466,16 @@
   font-weight: 400;
 }
 
-.partnerFooter a:hover {
+.priceFooter a {
+  text-decoration: none;
+  color: white;
+}
+
+.priceFooter a:hover {
   color: #ec5242;
 }
 
-.listPartnerFooter {
+.listpriceFooter {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -492,7 +485,7 @@
   flex-wrap: wrap;
 }
 
-.listPartnerFooter img {
+.listpriceFooter img {
   margin: 0 auto;
 }
 
@@ -503,13 +496,6 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.logoFooter {
-  width: 160px;
-  height: 40px;
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 .rightsFooter {
@@ -523,9 +509,154 @@
   font-weight: 600;
 }
 
+/* Price/Footer section end */
+
 .item input {
   margin: 0 0 0 5px;
 }
+
+.activeSpan {
+  color: #ec5242;
+  font-family: "coco bold", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listElement {
+  font-size: 20px;
+}
+
+.listElementActive {
+  display: inline;
+}
+
+.banner {
+  background-image: url("../img/i5.png");
+}
+
+.bannerInside {
+  background-color: rgba(231, 231, 231, 0.8);
+}
+
+.slogan {
+  font-size: 40px;
+  padding-left: 174px;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(https://media.giphy.com/media/kcUYBqq6ntGAZcfmiG/giphy.gif);
+  background-position: 50% 65%;
+  -webkit-background-clip: text;
+  font-size: 60px;
+  padding-left: 174px;
+}
+
+.subtitle {
+  font-size: 14px;
+  padding: 20px;
+  width: 580px;
+  border: 4px solid white;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+.copyRight {
+  padding-left: 174px;
+}
+
+.mainProgram {
+  display: flex;
+  flex-flow: row nowrap;
+  color: rgba(255, 255, 255, 0.9);
+  background-image: url("../img/i3.png");
+  flex-wrap: wrap;
+}
+
+.itemMainProgram {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 10px;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.itemMainProgramAbout {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 10px;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.logoMainProgram {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.titleProgram {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.descriptionProgram {
+  color: white;
+  padding: 20px 5px;
+  font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+
+.features {
+  font-size: 35px;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  background-image: url(../img/SmallSpeaker1-03.png);
+}
+
+.columns li {
+  background-color: lightgrey;
+}
+
+.container {
+  width: 100%;
+}
+
+.speakersContainer {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.speakers {
+  margin: 10px;
+  width: 415px;
+}
+
+.infoSpeakers {
+  width: 250px;
+}
+
+.listpriceFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.listpriceFooter img {
+  padding: 0 20px;
+}
+
+/* Mediaqueries */
 
 /*  ==================================================
                       >768px
@@ -543,178 +674,5 @@
     color: white;
     font-family: "coco light", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
-  }
-
-  .social a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .social i {
-    padding: 10px;
-  }
-
-  .facebook {
-    font-size: 24px;
-  }
-
-  .twitch {
-    font-size: 24px;
-  }
-
-  .social > span {
-    padding: 10px;
-    padding-right: 20px;
-  }
-
-  .activeSpan {
-    color: #ec5242;
-    font-family: "coco bold", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .listElement {
-    font-size: 20px;
-  }
-
-  .listElementActive {
-    display: inline;
-  }
-
-  .logo {
-    margin-left: 39px;
-    width: 380px;
-    height: 80px;
-    background-size: cover;
-  }
-
-  .banner {
-    background-image: url("../img/i5.png");
-  }
-
-  .bannerInside {
-    background-color: rgba(231, 231, 231, 0.8);
-  }
-
-  .slogan {
-    font-size: 40px;
-    padding-left: 174px;
-  }
-
-  .title {
-    color: rgba(0, 0, 0, 0.4);
-    background-image: url(https://media.giphy.com/media/kcUYBqq6ntGAZcfmiG/giphy.gif);
-    background-position: 50% 65%;
-    -webkit-background-clip: text;
-    font-size: 60px;
-    padding-left: 174px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-    padding: 20px;
-    width: 580px;
-    border: 4px solid white;
-    line-height: 20px;
-    margin: 0 auto;
-  }
-
-  .copyRight {
-    padding-left: 174px;
-  }
-
-  .mainProgram {
-    display: flex;
-    flex-flow: row nowrap;
-    color: rgba(255, 255, 255, 0.9);
-    background-image: url("../img/i3.png");
-    flex-wrap: wrap;
-  }
-
-  .tickets {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-    border: 2px solid #ec5242;
-    padding: 10px;
-    margin: 20px auto;
-    color: rgba(0, 0, 0, 0.1);
-    background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
-    background-position: 200% 50%;
-    -webkit-background-clip: text;
-  }
-
-  .itemMainProgram {
-    display: flex;
-    flex-flow: column;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 10px;
-    margin: 10px auto;
-    width: 300px;
-  }
-
-  .itemMainProgramAbout {
-    display: flex;
-    flex-flow: column;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 10px;
-    margin: 10px auto;
-    width: 300px;
-  }
-
-  .logoMainProgram {
-    margin: 10px auto;
-    width: 100px;
-    height: 100px;
-  }
-
-  .titleProgram {
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  .descriptionProgram {
-    color: white;
-    padding: 20px 5px;
-    font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    text-align: center;
-  }
-
-  .btnJoin {
-    display: none;
-  }
-
-  .features {
-    font-size: 35px;
-  }
-
-  .speakersContainer {
-    display: flex;
-    flex-flow: row;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .speakers {
-    margin: 10px;
-    width: 415px;
-  }
-
-  .infoSpeakers {
-    width: 250px;
-  }
-
-  .listPartnerFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .listPartnerFooter img {
-    padding: 0 20px;
   }
 }
