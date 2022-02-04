@@ -61,14 +61,24 @@
   padding: 10px;
 }
 
-.logo {
-  width: 179px;
-  height: 40px;
-  background-image: url("../img/logo-small.png");
+.listNav h1 {
+  margin: 1em 0 0.5em 0;
+  color: #343434;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
 }
 
 .listNav {
   text-align: right;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.listNav h1 {
+  margin-right: 1500px;
 }
 
 .listElement {
@@ -114,10 +124,6 @@
 
 .listElement a:hover {
   color: #ec5242;
-}
-
-.banner {
-  background-image: url("../img/background-large.png");
 }
 
 .cta {
@@ -166,6 +172,16 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  margin-top: 60px;
+}
+
+.flip-box-inner h2 {
+  margin-top: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.flip-box-inner p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Style the front side */
@@ -190,6 +206,7 @@
   float: left;
   width: 33.3%;
   padding: 8px;
+  background-image: url(../img/SmallSpeaker1-03.png);
 }
 
 .price {
@@ -232,10 +249,6 @@
   font-size: 18px;
 }
 
-.bannerTicket {
-  background-image: url("../img/background-large-ticket.png");
-}
-
 .slogan {
   padding-left: 28px;
   padding-top: 20px;
@@ -255,7 +268,6 @@
   font-family: "coco fat", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
   color: rgba(227, 58, 52, 0.1);
-  background-image: url(https://media.giphy.com/media/l0K4ekwdCUu9KdeF2/giphy.gif);
   background-position: 50% 65%;
   -webkit-background-clip: text;
 }
@@ -272,10 +284,10 @@
   padding-left: 39px;
   padding-right: 50px;
   font-size: 16px;
-  text-align: justify;
+  text-align: center;
   padding-bottom: 30px;
   line-height: 30px;
-  font-family: "Lato", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #272a31;
 }
 
@@ -287,18 +299,6 @@
   font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   color: rgb(82, 82, 82);
-}
-
-.titleMainProgram {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgba(255, 255, 255, 0.9);
-  background-position: 100% 100%;
-  background-image: url("../img/background-small.png");
 }
 
 .titleMainProgram a :hover {
@@ -313,22 +313,6 @@
 
 .underline-orange a :hover {
   color: #ec5242;
-}
-
-.mainProgram {
-  background-color: #272a31;
-  color: rgba(255, 255, 255, 0.9);
-  background-image: url("../img/background-small.png");
-  border: 1px solid transparent;
-}
-
-.mainProgramTicket {
-  background-color: #272a31;
-  color: rgba(255, 255, 255, 0.9);
-  background-image: url("../img/background-small.png");
-  border: 1px solid transparent;
-  display: flex;
-  justify-content: center;
 }
 
 .itemMainProgram {
@@ -375,14 +359,9 @@
   min-width: 70px;
 }
 
-.btnJoin {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-image: url("../img/background-small.png");
+.speakers img {
+  max-height: 220px;
+  max-width: 130px;
 }
 
 .btnJoinCC {
@@ -401,16 +380,6 @@
   font-size: 26px;
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.btnJoinTicket {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-image: url("../img/background-small.png");
 }
 
 .btnJoinCCTicket {
@@ -539,7 +508,6 @@
 .logoFooter {
   width: 160px;
   height: 40px;
-  background-image: url("../img/logo-small.png");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -553,21 +521,6 @@
   color: gray;
   font-size: 13px;
   font-weight: 600;
-}
-
-.tickets {
-  font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  border: 2px solid #ec5242;
-  padding: 10px 10px;
-  margin: 20px auto;
-  color: rgba(0, 0, 0, 0.1);
-  background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
-  background-position: 200% 50%;
-  -webkit-background-clip: text;
 }
 
 .item input {
@@ -632,11 +585,10 @@
     width: 380px;
     height: 80px;
     background-size: cover;
-    background-image: url("../img/logo-big.png");
   }
 
   .banner {
-    background-image: url("../img/background-large.png");
+    background-image: url("../img/i5.png");
   }
 
   .bannerInside {
@@ -670,23 +622,11 @@
     padding-left: 174px;
   }
 
-  .titleMainProgram {
-    color: rgba(255, 255, 255, 0.9);
-    background-position: 100% 100%;
-    background-image: url("../img/background-small.png");
-  }
-
   .mainProgram {
     display: flex;
     flex-flow: row nowrap;
     color: rgba(255, 255, 255, 0.9);
-    background-image: url("../img/background-small.png");
-    flex-wrap: wrap;
-  }
-
-  .mainProgramTicket {
-    color: rgba(255, 255, 255, 0.9);
-    background-image: url("../img/background-small.png");
+    background-image: url("../img/i3.png");
     flex-wrap: wrap;
   }
 
